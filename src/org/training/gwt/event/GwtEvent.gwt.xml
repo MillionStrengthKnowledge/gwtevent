@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module 
+PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.1//EN" 
+"http://gwtproject.org/doctype/2.8.1/gwt-module.dtd">
+
+<module rename-to="gwtevent">
+	<inherits name="com.google.gwt.user.User" />
+	
+	<inherits name='com.google.gwt.user.theme.clean.Clean'/>
+	
+	<entry-point class="org.training.gwt.event.client.GwtEventEntryPoint" />
+
+	<source path="client" />
+</module>
+

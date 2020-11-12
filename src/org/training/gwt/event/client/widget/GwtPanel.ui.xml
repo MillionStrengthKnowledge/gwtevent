@@ -1,0 +1,100 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+    xmlns:gwt='urn:import:com.google.gwt.user.client.ui'>
+
+<gwt:HTMLPanel>
+<gwt:HorizontalPanel>
+		<gwt:Hidden ui:field="uniqueId" name="uniqueId" value="10000" />
+		 <gwt:Grid borderWidth="1" width="350px">
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label>Salutation</gwt:Label>
+		    </gwt:customCell>
+		    <gwt:customCell>
+				<gwt:ListBox ui:field="salutationListBox">
+				  <gwt:item value="Mr">Mr</gwt:item>
+				  <gwt:item value="Mrs">Mrs</gwt:item>
+				  <gwt:item value="Miss">Miss</gwt:item>
+				</gwt:ListBox>
+		    </gwt:customCell>
+		  </gwt:row>		 
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label text="Username" />
+		    </gwt:customCell>
+		    <gwt:customCell>
+		      <gwt:TextBox ui:field="usernameTextBox" />
+		    </gwt:customCell>
+		  </gwt:row>
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label text="Password" />
+		    </gwt:customCell>
+		    <gwt:customCell>
+		      <gwt:PasswordTextBox ui:field="passwordTextBox" />
+		    </gwt:customCell>
+		  </gwt:row>
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label>Gender</gwt:Label>
+		    </gwt:customCell>
+		    <gwt:customCell>
+		    	<gwt:VerticalPanel>
+					<gwt:RadioButton ui:field="femaleOption" name="genderSelection" value="true" enabled="true">Female</gwt:RadioButton>
+					<gwt:RadioButton ui:field="maleOption" name="genderSelection" value="false" enabled="true">Male</gwt:RadioButton>
+				</gwt:VerticalPanel>
+		    </gwt:customCell>
+		  </gwt:row>
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label>Premium Member</gwt:Label>
+		    </gwt:customCell>
+		    <gwt:customCell>
+				<gwt:CheckBox ui:field="premiumMemberCheckBox" />
+		    </gwt:customCell>
+		  </gwt:row>
+		  <gwt:row>
+		    <gwt:customCell>
+		    <gwt:VerticalPanel>
+		    	<gwt:Label text="User Role" />
+		    </gwt:VerticalPanel>
+		    </gwt:customCell>
+		    <gwt:customCell>
+				<gwt:ListBox ui:field="userRoleListBox" visibleItemCount="5" multipleSelect="true">
+				  <gwt:item value="normalUser">Normal User</gwt:item>
+				  <gwt:item value="administrator">Administrator</gwt:item>
+				  <gwt:item value="manager">Manager</gwt:item>
+				</gwt:ListBox>
+		    </gwt:customCell>
+		  </gwt:row>
+		  <gwt:row>
+		    <gwt:customCell>
+		      <gwt:Label>Description</gwt:Label>
+		    </gwt:customCell>
+		    <gwt:customCell>
+				<gwt:TextArea ui:field="descriptionTextArea" visibleLines="5" width ="200px">
+				</gwt:TextArea>
+		    </gwt:customCell>
+		  </gwt:row>		  
+		  <gwt:row>
+		    <gwt:customCell>
+		    	<gwt:Label />
+		    </gwt:customCell>
+		    <gwt:customCell>
+		    	<gwt:HorizontalPanel>
+					<gwt:Button ui:field="saveButton" text="Save"/>
+					<gwt:Button ui:field="clearTraceButton" text="Clear Trace"/>
+		    	</gwt:HorizontalPanel>
+		    </gwt:customCell>
+		  </gwt:row>
+		  </gwt:Grid>
+		  <gwt:Grid>
+		  	<gwt:row>
+		    <gwt:customCell>
+				<gwt:TextArea ui:field="eventTrace" visibleLines="18" width ="600px">
+				</gwt:TextArea>
+		    </gwt:customCell>
+		    </gwt:row>																					
+		  </gwt:Grid>
+</gwt:HorizontalPanel>
+</gwt:HTMLPanel>
+</ui:UiBinder>
